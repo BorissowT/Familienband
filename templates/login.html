@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css"/>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <link rel="shortcut icon" href="pics/favicon.ico" type="image/ico">  
+  <title>Familien Bande | Main</title>
+</head>
+<body class="background">
+  <div class="top_line"></div>
+  <nav> 
+    <div class="container mb-4 mt-3">
+      <div class="row my-0 py-0 d-flex flex-nowrap justify-content-between">
+        <div class="company_title  col-xl-4 pl-1 pr-0">
+          <div class="company_title mt-0 ml-1">familien </div>
+          <div class="company_title d-flex justify-content-around align-items-start ml-5">bande +</div>
+        </div>
+        <ul class="px-0 col-xl-8 menu_text">     
+          <div class="d-flex">
+            <a href='/'><div class="red_menu_block mx-2">Home</div></a>
+            <a href='/contact'><div class="orange_menu_block mx-2 "><p>Kontakt</p></div></a>
+            <a href='/info'><div class="blue_menu_block  mx-2 "><p>Info</p></div></a>
+            <a href='/login'><div class="menu_block_active green_menu_block mx-2"><p>Eintritt</p></div></a>
+          </div>
+        </ul>  
+       <select class="mr-5 menu_text menu_select pr-1">  
+        <option>Home&#9660;</option> 
+        <option>Kontakt</option> 
+        <option>Info</option> 
+        <option>Eintritt</option> 
+        </select>
+      </div>
+    </div>
+  </nav>
+  <div class="box mt-0 mt_flex ">
+    <div class="container pl-0 pr-0 d-flex justify-content-center">
+      <div class="row">
+        <div class="col-lg-12 offset-2 offset-lg-4 col-xs-12 ml-0 px-4">       
+            <div class="text-center mt-5 b-1">
+              <div class="d-flex justify-content-center">
+                <h1 class="h3 mb-3 font-weight-normal">Verwaltung</h1>
+                <img class="ml-4" src="pics/spanners-adjustable-spanner-wrench-size-hex-key-clip-art-wrenches-removebg-preview.png" width="38" height="40">
+              </div>
+              <p class="h5 font-weight-light">Anmelden oder ein Profil erstellen</p>
+            </div>
+          <form action="{{ url_for('login')}}" method="POST">
+            <div class="login_frame">
+            <div class="form-group">
+              <label for="exampleInputEmail1">Login oder Email</label>
+              <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" required>
+              <small id="emailHelp" class="form-text text-muted">Wir geben dein Login oder Email weiter nicht.</small>
+            </div>
+            <div class="form-group">
+              <label for="exampleInputPassword1">Password</label>
+              <input type="password" class="form-control" id="exampleInputPassword1" required>
+            </div>
+          </div>
+            <button class="btn-lg btn-anmelden btn-block" type="submit">Anmelden</button>
+         </form>
+            <button class=" mt-1 btn-lg btn-registrieren btn-block" type="submit">Registrieren</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <nav class="nav_bottom d-none d-sm-block">
+    <div class="top_line"></div>  
+  </nav>
+  
+</body>
+</html>
